@@ -1,8 +1,4 @@
-function swap(array, para, de) {
-    array.splice(de, 0, array.splice(para, 1)[0])
-    return array
-  }
-  
+
   
   function shuflle(array) {
     return array.sort(() => Math.random() - 0.5);
@@ -21,6 +17,7 @@ function swap(array, para, de) {
       }
     }
     console.log(array);
+    retornarArr(array)
   }
   
   
@@ -37,41 +34,35 @@ function swap(array, para, de) {
       array[minIndex] = aux
     }
     console.log(array)
+    retornarArr(array)
   }
   
   function quick_sort(array) {
-    if (array <= 1) return array;
-    const pivot = array[0];
-    const esquerda = [];
-    const direita = [];
-  
-    for (let i = 1; i < array.length; i++) {
-      if (array[i] < pivot) {
-        esquerda.push(array[i]);
-      } else {
-        direita.push(array[i]);
-      }
-    }
-    console.log(quick_sort(esquerda).concat(pivot, quick_sort(direita)));
+    array.sort((a,b) => {
+        return a - b
+    })
+    return retornarArr(array)
   }
-  
+
   
   /* input do vetor */
   let arr = []
+
   function pushData() {
     let input = document.getElementById("input").value;
     arr.push(input);
-    let node = document.createElement("li")
-    let pval = "";
-  
-    for (i = 0; i < arr.length; i++) {
-      pval = pval + ("<li>" + arr[i]);
-    }
-    input.value="";
-    document.getElementById('text').innerHTML = pval;
+     retornarArr(arr)
   }
   
-  
+  function retornarArr(array){
+    document.getElementById("text").innerHTML=""
+    let pval = "";
+    for(let i = 0; i<array.length; i++){
+    pval = pval+("<li>" + array[i])
+    }
+    
+    document.getElementById("text").innerHTML=pval
+    }
   let selectedObj = {
     bubble_sort: () => { bubble_sort(arr) },
     select: () => { select_sort(arr) },
@@ -85,3 +76,14 @@ function swap(array, para, de) {
     console.log(selectedObj)
     return selectedObj[select01.value]();
 }
+
+
+function misturarbtn(){
+    let misturar = document.getElementById('Misturar').value
+    let misturarf = shuflle(arr)
+    console.log(misturarf)
+    retornarArr(misturarf)
+    return misturarf
+    
+}
+

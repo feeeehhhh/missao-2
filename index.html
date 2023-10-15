@@ -6,20 +6,40 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <script src="script.js"></script>
+    <link rel="stylesheet" href="/style.css">
 </head>
+
 <body>
+    <div class="fundo
+    "></div>
+    <main class="container">
+        <h1 id="i1">Ordenando </h1>
+        <h1 id="i2">Vetores</h1>
+        <div class="geral">
 
-    <input type="number" name="" id="input">
-    <input type="button" value="Adicionar" id="add" onclick="pushData();">
+            <div>
+                <input type="number" name="" id="input" placeholder="Digite um numero por vez ...">
+                <input class="btn" type="button" value="Adicionar" id="add" onclick="pushData();">
+            </div>
 
-    <select onchange="selectedOn()" id="select">
-        <option value="bubble_sort">Blubble Sort</option>
-        <option value="select">Selection Sort</option>
-        <option value="quick_sort">Quick Sort</option>
-    </select>
-    <input type="button" value="Ordenar" id="ordenar">
-    <input type="button" value="Misturar" id="Misturar">
-    <ul id="text"></ul>
+
+            <select onchange="selectedOn()" id="select" class="select">
+                <option value="bubble_sort">Blubble Sort</option>
+                <option value="select">Selection Sort</option>
+                <option value="quick_sort">Quick Sort</option>
+            </select>
+            <div>
+                <input class="btn" type="button" value="Ordenar" id="ordenar">
+                <input class="btn" onclick="misturarbtn()" type="button" value="Misturar" id="Misturar">
+            </div>
+            <div class="arraycam" >
+                <ul id="text"></ul>
+            </div>
+            
+        </div>
+    </main>
+
+
 </body>
 
 </html>
