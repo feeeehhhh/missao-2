@@ -1,0 +1,37 @@
+[
+    {
+        "Titulo": "Bolo de Chocolate",
+        "imagem": "img/bolodechocolate.jpeg",
+        "ingredientes": [
+            "1 pacote de Mistura de bolo de chocolate 450g",
+            "2/3 de xicara (chá) de leite gelado (160 ml)",
+            "3 ovos",
+            "3 colheres de margarina"
+        ],
+        "preparo": "Antes de preparar pré aqueça o fornp à temperatura de 180 C por 10min; Junte a forma com margarina e polvilhe com farinha de trigo; Misture o conteúdo do pacote com ovos, leite gelado e a margarina; Bata em velocidade alta por aproximadamente 5 minutos, ou a mão durante 7 minutos, até obter uma massa lisa e homogênea; Despeje a massa em fôrma untada e leve ao forno."
+    },
+    {
+        "Titulo": "Bolo Sem Fermento",
+        "imagem": "img/semfermento.webp ",
+        "ingredientes": [
+            "5 ovos",
+            "3 xícaras de açúcar",
+            "3 xícaras de farinha de trigo",
+            "1 xícara de água"
+        ],
+        "preparo": "Separe as claras das gemas, em seguida, bata as claras até que fiquem em ponto de neve ,ainda batendo, adicione as gemas e o açúcar e continue batendo até ficar homogêneo.Nesse meio tempo, pare de bater e adicione a farinha e a água intercalados (um pouco de um, um pouco do outro), despeje em forma untada e leve ao forno a 180 °C por cerca de 40 minutos ou até dourar."
+    },
+    {
+        "Titulo": "Bolo de Laranja",
+        "imagem": "img/bolodelaranja.jpeg",
+        "ingredientes": [
+            "1 laranja ",
+            "3 ovos",
+            "1 xícara e meia de açúcar",
+            "1 xícara de óleo",
+            "1 colher de fermento",
+            "2 xícaras de farinha de trigo"
+        ],
+        "preparo": "Bater os quatro primeiros ingredientes no liquidificador e por tudo numa tigela misturar a farinha de trigo e o fermento a essa massa e assar."
+    }
+]
